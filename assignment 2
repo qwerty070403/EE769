@@ -1,1 +1,13 @@
-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import sys
+plt.style.use('ggplot')
+# above we are importing all libraries that will be useful
+# Importing functions from sklearn library now
+from sklearn import preprocessing
+from sklearn.model_selection import train_test_split
+# Importing the dataset..thanks to my good friend Vedant Yadav(210110116) who told me about a delimiter
+d_red = pd.read_csv('winequality-red.csv', delimiter=';')
+d_white = pd.read_csv('winequality-white.csv', delimiter=';')
